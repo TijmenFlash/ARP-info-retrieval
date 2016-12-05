@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-  		<title>PHP Test</title>
+  		<title>Search | ES</title>
   		<link rel="stylesheet" type="text/css" href="style.css">
  	</head>
  	<body>
@@ -12,5 +12,9 @@
  				<input type="text" name="q">
  			</label>
  		</form>
+ 		<button id="testbut">button to send "verpakking"</button>
+ 		<div id="results"></div>
  	</body>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+ 	<script src="functions.js"></script>
 </html>
