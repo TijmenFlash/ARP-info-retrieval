@@ -1,0 +1,35 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>Wishlist</title>
+</head>
+<body>
+    <button id="button1">Search</button>
+    <div id="container1" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <hr style="height:2.5px;border:none;color:#333;background-color:#333;" />
+    <script>
+        $( "#button1" ).click(function(){
+            $.ajax({
+                url: "http://localhost:8000",
+                type: "POST",
+                dataType: "text",
+                /*success: function(response){
+                   alert('success');
+                },*/
+                error: function(){
+                   alert('failure');
+                }
+            }).done(function(output){
+                var result=[];
+                //var resultfinal=[];
+                result=JSON.parse(output);
+                //for (var j=0;j<result.length;j++) {
+                //    resultfinal.push(JSON.parse(result[j]));
+                //}
+                alert(result);
+                });
+        });
+    </script>
+</body>
+</html>
