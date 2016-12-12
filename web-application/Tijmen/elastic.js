@@ -9,7 +9,7 @@ var client = new elasticsearch.Client({
 });
 
 var hits;
-var serverPort = 8080
+var serverPort = 8080;
 
 client.search({
   index: 'project1',

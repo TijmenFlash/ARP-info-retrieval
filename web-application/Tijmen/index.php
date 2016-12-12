@@ -9,10 +9,11 @@
  		<form action="index.php" method="get" autocomplete="off">
  			<label>
  				Search for something
- 				<input type="text" name="q">
+ 				<input type="text" name="q" id="search">
+				<input type="Search" value="Submit">
  			</label>
  		</form>
- 		<button id="testbut">button to send "verpakking"</button>
+ 		<!--<button id="testbut">button to send "verpakking"</button>-->
  		<div id="results"></div>
  	</body>
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
