@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+  		<title>Search | ES</title>
+  		<link rel="stylesheet" type="text/css" href="style.css">
+ 	</head>
+ 	<body>
+ 		<form action="index.html" method="get" autocomplete="off">
+			Search for something
+			<input id="search" type="text" name="q">
+			<input type="submit" value="Submit">
+ 		</form>
+ 		<div id="results"></div>
+ 	</body>
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+		console.log("functions.js loaded");
+		$("form").submit(function(e) {
+			$.ajax({
+				type: "POST",
+				url: "http://localhost:8080",
+				data: $("#search").val(), // serializes the form's elements.
+				dataType: 'text',
+				success: function(data)
+				{
+					$("#results").html(data); // show response from the php script.
+				}
+			});
+			console.log($("#search").val());
+			e.preventDefault(); // avoid to execute the actual submit of the form.
+		});
+	</script>
+</html>
