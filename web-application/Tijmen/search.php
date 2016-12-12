@@ -10,7 +10,7 @@
  	<body>
  		<!--menu-->
  		<div id='menu-div'>
- 			<button class="menu-item unselectable">Profile</button><button class="menu-item unselectable">Favorites</button>
+ 			<button class="menu-item unselectable">Profile</button><button class="menu-item unselectable">My Wishlist</button>
  			<button onClick="location.href='index.php'" class="menu-item menu-item-left unselectable">&#8630; Back</button>
  			<button id="testbut" class="menu-item menu-item-left unselectable">temp "verpakking"</button> 	
  		</div>
@@ -18,36 +18,6 @@
  		<!--search part-->
  		<div class="unselectable" id="products-div">
  			<div id="results-div">
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-				<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-				<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-				<div class='product'></div>
-	 			<div class='product'></div>
-	 			<div class='product'></div>
-	 			<br><br><br><br><br><br><br><br><br><br><br><br>
 	 		</div>
  		</div>
 

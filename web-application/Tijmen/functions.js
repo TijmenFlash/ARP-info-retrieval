@@ -13,10 +13,10 @@ $("#testbut").click(function() {
 });
 
 function updateItems(){ 
+  $("#results-div").html("")
   for(i=0;i<JSONdata.length;i++){
-    var elem = document.createElement("img");
-    $("#results").append(elem);
-    elem.src = JSONdata[i]._source.image
+    $("#results-div").append("<div class='product'><img src='"+JSONdata[i]._source.image+"'/></div>");
   }
+  $("#results-div").append("<br><br><br><br><br><br>")
 }
 

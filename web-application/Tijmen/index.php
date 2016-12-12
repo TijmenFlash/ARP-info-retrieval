@@ -10,21 +10,21 @@
  	<body>
  		<!--menu-->
  		<div id='menu-div'>
- 			<button class="menu-item unselectable">Profile</button><button class="menu-item unselectable">Favorites</button>
+ 			<button class="menu-item unselectable">Profile</button><button class="menu-item unselectable">My Wishlist</button>
  		</div>
  		<!--logo-->
  		<div id='logo-div'><a href="index.php"><img class="unselectable" id="logo-main" src="src/logo.png"/></a></div>
  		<!--categories-->
  		<div class="unselectable" id="categories-div">
  			<h1>Choose a category</h1>
- 			<a href='search.php'><div class='categories'><img class="category-img" src="src/sports.jpg"/>Sports</div></a>
- 			<a href='search.php'><div class='categories'><img class="category-img" src="src/sports.jpg"/>Sports</div></a>
- 			<a href='search.php'><div class='categories'><img class="category-img" src="src/sports.jpg"/>Sports</div></a>
- 			<a href='search.php'><div class='categories'><img class="category-img" src="src/sports.jpg"/>Sports</div></a><br>
- 			<a href='search.php'><div class='categories'><img class="category-img" src="src/sports.jpg"/>Sports</div></a>
- 			<a href='search.php'><div class='categories'><img class="category-img" src="src/sports.jpg"/>Sports</div></a>
- 			<a href='search.php'><div class='categories'><img class="category-img" src="src/sports.jpg"/>Sports</div></a>
- 			<a href='search.php'><div class='categories'><img class="category-img" src="src/sports.jpg"/>Sports</div></a> 	
+ 			<button onClick="location.href='search.php'" class='categories'><img class="category-img" src="src/sports.jpg"/>Sports</button>
+ 			<button onClick="location.href='search.php'" class='categories'><img class="category-img" src="src/videogames.jpg"/>Video Games</button>
+ 			<button onClick="location.href='search.php'" class='categories'><img class="category-img" src="src/clothes.jpg"/>Clothes</button>
+ 			<button onClick="location.href='search.php'" class='categories'><img class="category-img" src="src/books2.jpg"/>Books</button><br>
+ 			<button onClick="location.href='search.php'" class='categories'><img class="category-img" src="src/x.jpg"/>Toys</button>
+ 			<button onClick="location.href='search.php'" class='categories'><img class="category-img" src="src/x.jpg"/>Electronics</button>
+ 			<button onClick="location.href='search.php'" class='categories'><img class="category-img" src="src/x.jpg"/>Stuffed Animals</button>
+ 			<button onClick="location.href='search.php'" class='categories'><img class="category-img" src="src/x.jpg"/>Favourite Characters</button> 	
  		</div>
  		<!--status footer-->
  		<div class="unselectable" id="status-div">
