@@ -6,9 +6,9 @@
   		<link rel="stylesheet" type="text/css" href="style.css">
  	</head>
  	<body>
- 		<form action="index.html" method="get" autocomplete="off">
+ 		<form id="formid" action="index.html" method="get" autocomplete="off">
 			Search for something
-			<input id="search" type="text" name="q">
+			<input id="searchbox" type="text" name="q">
 			<input type="submit" value="Submit">
  		</form>
  		<div id="results"></div>
@@ -16,18 +16,18 @@
  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script>
 		console.log("functions.js loaded");
-		$("form").submit(function(e) {
+		$("#formid").submit(function(e) {
 			$.ajax({
 				type: "POST",
 				url: "http://localhost:8080",
-				data: $("#search").val(), // serializes the form's elements.
+				data: $("#searchbox").val(), // serializes the form's elements.
 				dataType: 'text',
 				success: function(data)
 				{
 					$("#results").html(data); // show response from the php script.
 				}
 			});
-			console.log($("#search").val());
+			console.log($("#searchbox").val());
 			e.preventDefault(); // avoid to execute the actual submit of the form.
 		});
 	</script>

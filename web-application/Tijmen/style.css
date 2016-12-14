@@ -28,6 +28,7 @@ button:focus {
 
 #menu-div{
 	height:7vh;
+	min-height:40px;
 	width:100%;
 	position:absolute;
 	background-color: rgb(252,99,59);
@@ -88,7 +89,7 @@ button:focus {
 	line-height:5vh;
 	position:absolute;
 }
-#status-item{
+.status-item{
 	display:inline-block;
 	width:33%;
 	min-width:400px;
@@ -153,7 +154,7 @@ button:focus {
 	margin:5px;
 	text-align: center;
 	border:none;
-	border-radius: 10px;
+	border-radius: 2px;
 	cursor:pointer;
 }
 .categories:hover{
@@ -161,13 +162,13 @@ button:focus {
 }
 .category-img{
 	width:95%;
-	border-radius:5px;
+	border-radius:1px;
 	margin:2.5%;
 }
 
 .product{
-	width:300px;
-	height:250px;
+	width:220px;
+	height:220px;
 	background-color:#777;
 	display:inline-block;
 	margin-top:0px;
@@ -182,4 +183,40 @@ button:focus {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+}
+
+#searchbox{
+	text-decoration: none;
+	font-family: "Arial", Arial;
+	font-size: 1em;
+	text-align:left;
+	padding-left:10px;
+	display:inline-block;
+	background-color: white;
+	margin-top:0.7%;
+	height:4vh;
+	min-height:20px;
+	margin-left:10px;
+	width:195px;
+	line-height:3vh;
+	color:rgb(50,50,50);
+}
+#searchboxSend{
+	text-decoration: none;
+	font-family: "Arial", Arial;
+	font-size: 1em;
+	text-align:center;
+	display:inline-block;
+	background-color: #999;
+	margin-top:0.7%;
+	padding-top:2px;
+	height:4vh;
+	min-height:20px;
+	width:100px;
+	line-height:3vh;
+	color:white;
+	border-radius:2px;
+}
+#searchbox:hover{
+	cursor:auto;
 }

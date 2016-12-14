@@ -7,12 +7,15 @@
   		<link rel="stylesheet" type="text/css" href="style.css">
  	</head>
 
- 	<body>
+ 	<body onload="presearch()">
  		<!--menu-->
  		<div id='menu-div'>
  			<button class="menu-item unselectable">Profile</button><button class="menu-item unselectable">My Wishlist</button>
  			<button onClick="location.href='index.php'" class="menu-item menu-item-left unselectable">&#8630; Back</button>
- 			<button id="testbut" class="menu-item menu-item-left unselectable">temp "verpakking"</button> 	
+ 			<form id="formSearch" action="search.php" method="get" autocomplete="off">
+				<input id="searchbox" class="menu-item menu-item-left unselectable" type="text" name="q" pattern=".{1,}" required title="1 characters minimum">
+				<input id="searchboxSend" class="menu-item menu-item-left unselectable" type="submit" value="Search">
+ 			</form>
  		</div>
  		
  		<!--search part-->
