@@ -10,7 +10,7 @@
  	<body onload="setStatusItems()">
  		<!--menu-->
  		<div id='menu-div'> 			
- 			<button class="menu-item unselectable">Profile</button><button class="menu-item unselectable">My Wishlist</button>
+ 			<button class="menu-item unselectable">Profile</button><button class="menu-item unselectable" onClick="location.href='wishlist.php'">My Wishlist</button>
  			<form id="formHome" action="search.php" method="get" autocomplete="off">
 				<input id="searchbox" class="menu-item menu-item-left unselectable" type="text" name="q" pattern=".{1,}" required title="1 characters minimum">
 				<input id="searchboxSend" class="menu-item menu-item-left unselectable" type="submit" value="Search">
@@ -21,14 +21,15 @@
  		<!--categories-->
  		<div class="unselectable" id="categories-div">
  			<h1>Choose a category</h1>
- 			<button onClick="location.href='search.php?q=sport'" class='categories'><img class="category-img" src="src/sports.jpg"/>Sports</button>
- 			<button onClick="location.href='search.php?q=video games'" class='categories'><img class="category-img" src="src/videogames.jpg"/>Video Games</button>
- 			<button onClick="location.href='search.php?q=kleding'" class='categories'><img class="category-img" src="src/clothes.jpg"/>Clothes</button>
- 			<button onClick="location.href='search.php?q=book'" class='categories'><img class="category-img" src="src/books2.jpg"/>Books</button><br>
- 			<button onClick="location.href='search.php?q=speelgoed'" class='categories'><img class="category-img" src="src/x.jpg"/>Toys</button>
- 			<button onClick="location.href='search.php?q=Electronica'" class='categories'><img class="category-img" src="src/x.jpg"/>Electronics</button>
- 			<button onClick="location.href='search.php?q=pop'" class='categories'><img class="category-img" src="src/x.jpg"/>Stuffed Animals</button>
- 			<button onClick="location.href='search.php?q=favoriet'" class='categories'><img class="category-img" src="src/x.jpg"/>Favourite Characters</button> 	
+ 			<div onClick="location.href='search.php?q=sport'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/sports.jpg'/></div><div class="categorie_part_b">Sports</div></div>
+ 			<div onClick="location.href='search.php?q=video games'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/videogames.jpg'/></div><div class="categorie_part_b">Video Games</div></div>
+ 			<div onClick="location.href='search.php?q=kleding'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/clothes.jpg'/></div><div class="categorie_part_b">Clothes</div></div>
+ 			<div onClick="location.href='search.php?q=boek'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/books2.jpg'/></div><div class="categorie_part_b">Books</div></div>
+ 			<br>
+ 			<div onClick="location.href='search.php?q=speelgoed'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/sports.jpg'/></div><div class="categorie_part_b">cat5</div></div>
+ 			<div onClick="location.href='search.php?q=electronica'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/sports.jpg'/></div><div class="categorie_part_b">cat6</div></div>
+ 			<div onClick="location.href='search.php?q=pop'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/sports.jpg'/></div><div class="categorie_part_b">cat7</div></div>
+ 			<div onClick="location.href='search.php?q=favoriet'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/sports.jpg'/></div><div class="categorie_part_b">cat8</div></div>
  		</div>
  		<!--status footer-->
  		<div class="unselectable" id="status-div">
