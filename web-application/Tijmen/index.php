@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 	<head>
 		<meta charset="utf-8">
   		<title>Wishly - Categories</title>
@@ -21,15 +20,15 @@
  		<!--categories-->
  		<div class="unselectable" id="categories-div">
  			<h1>Choose a category</h1>
- 			<div onClick="location.href='search.php?q=sport'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/sports.jpg'/></div><div class="categorie_part_b">Sports</div></div>
- 			<div onClick="location.href='search.php?q=video games'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/videogames.jpg'/></div><div class="categorie_part_b">Video Games</div></div>
- 			<div onClick="location.href='search.php?q=kleding'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/clothes.jpg'/></div><div class="categorie_part_b">Clothes</div></div>
- 			<div onClick="location.href='search.php?q=boek'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/books2.jpg'/></div><div class="categorie_part_b">Books</div></div>
+ 			<div onClick="location.href='cat1.php'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/sports.jpg'/></div><div class="categorie_part_b">Sports</div></div>
+ 			<div onClick="location.href='cat2.php'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/videogames.jpg'/></div><div class="categorie_part_b">Video Games</div></div>
+ 			<div onClick="location.href='cat3.php'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/clothes.jpg'/></div><div class="categorie_part_b">Clothes</div></div>
+ 			<div onClick="location.href='cat4.php'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/books.jpg'/></div><div class="categorie_part_b">Books</div></div>
  			<br>
- 			<div onClick="location.href='search.php?q=speelgoed'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/sports.jpg'/></div><div class="categorie_part_b">cat5</div></div>
- 			<div onClick="location.href='search.php?q=electronica'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/sports.jpg'/></div><div class="categorie_part_b">cat6</div></div>
- 			<div onClick="location.href='search.php?q=pop'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/sports.jpg'/></div><div class="categorie_part_b">cat7</div></div>
- 			<div onClick="location.href='search.php?q=favoriet'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/sports.jpg'/></div><div class="categorie_part_b">cat8</div></div>
+ 			<div onClick="location.href='cat5.php'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/placeholder.jpg'/></div><div class="categorie_part_b">cat5</div></div>
+ 			<div onClick="location.href='cat6.php'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/placeholder.jpg'/></div><div class="categorie_part_b">cat6</div></div>
+ 			<div onClick="location.href='cat7.php'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/placeholder.jpg'/></div><div class="categorie_part_b">cat7</div></div>
+ 			<div onClick="location.href='cat8.php'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/placeholder.jpg'/></div><div class="categorie_part_b">cat8</div></div>
  		</div>
  		<!--status footer-->
  		<div class="unselectable" id="status-div">

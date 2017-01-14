@@ -3,15 +3,6 @@ console.log("functions.js loaded")
 
 var JSONdata = 0;
 
-// $("#testbut").click(function() {
-//   $.ajax()
-//   $.post("http://localhost:8080", function( data ) {
-//     //$("#results").html( data );
-//     JSONdata = JSON.parse(data);
-//     updateItems();
-//   });
-// });
-
 function setStatusItems(){
   $('#statusItem1').html("10 users online");
   $('#statusItem2').html("1021 wish lists created");
@@ -39,17 +30,28 @@ function refreshResults(){
             $("#results-div").append("<div class='product'><div class='product-image'><img class='product-image-src' style='width:100%;' src='"+JSONdata[i]._source.image+"'/></div><div class='product-title'>"+JSONdata[i]._source.title+"</div><div onclick='addWish("+i+")' id='addWish"+i+"' class='add-to-wishlist'>+</div></div>");
           }
           if(JSONdata.length==0){
-            $("#results-div").append("<br><br>No results.")
+            $("#results-div").append("<br><br><h1>No results.</h1>");
           }
-          $("#results-div").append("<br><br><br><br>")
+          $("#results-div").append("<br><br><br><br>");
         }
       });
       console.log($("#searchbox").val());
 };
 
-// function refreshWishlistResults(){
-  
-// }
+function refreshWishlistResults(){
+  $.get('get_items.php',{ "_": $.now() }, function(data){
+    JSONdata = JSON.parse(data);
+    $("#results-div").html("")
+      for(i=0;i<JSONdata.length;i++){
+        $("#results-div").append("<div class='product'><div class='product-image'><img class='product-image-src' style='width:100%;' src='"+JSONdata[i].item_link+"'/></div><div class='product-title'>"+JSONdata[i].item_title+"</div><div onclick='removeWish("+i+")' id='removeWish"+i+"' class='remove-from-wishlist'>x</div></div>");
+      }
+      if(data.length==0){
+        $("#results-div").append("<br><br><h1>No results.</h1>");
+      }
+      $("#results-div").append("<br><br><br><br>");
+
+  });
+}
 
 function addWish(i){
   tempLink = JSONdata[i]._source.image;
@@ -60,11 +62,26 @@ function addWish(i){
   })
   .done(function(data){
     if (data === "success"){
-      update_status();
       alert("Item added");
     } else {
       alert('failure'+data);
     }
+  })
+}
+
+function removeWish(i){
+  tempId = JSONdata[i].item_id;
+  $.post('del_items.php',{
+    postId: tempId,
+  })
+  .done(function(data){
+    if (data === "success"){
+      
+      alert("Item deleted");
+    } else {
+      alert('failure'+data);
+    }
+    location.reload();
   })
 }
 
@@ -83,17 +100,3 @@ function getQueryStrings() {
   return assoc; 
 } 
 
-function update_status(){
-    $.get('get_items.php',{ "_": $.now() }, function(data){
-    data = JSON.parse(data);
-    wishlistItemsTemp = document.getElementsByClassName("product-image-src");
-    for (i=0;i<wishlistItemsTemp.length;i++){
-      for (j=0;j<data.length;j++){
-        if((wishlistItemsTemp[i].src)==(data[j].item_link)){
-          document.getElementById("addWish"+i).innerHTML = "v";
-          document.getElementById("addWish"+i).onClick = "null";
-        }
-      }
-    }
-  });
-}

@@ -10,8 +10,8 @@
  	<body onload="refreshWishlistResults()">
  		<!--menu-->
  		<div id='menu-div'>
- 			<button class="menu-item unselectable">Profile</button><button class="menu-item unselectable" onClick="location.href='wishlist.php'">My Wishlist</button>
- 			<button onClick="location.href='index.php'" class="menu-item menu-item-left unselectable">&#8630; Back</button>
+ 			<button class="menu-item unselectable">Profile</button><button class="menu-item unselectable active" onClick="location.href='wishlist.php'">My Wishlist</button>
+ 			<button onClick="history.go(-1);" class="menu-item menu-item-left unselectable">&#8630; Back</button>
  		</div>
  		
  		<!--search part-->

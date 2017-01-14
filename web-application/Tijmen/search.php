@@ -7,7 +7,7 @@
   		<link rel="stylesheet" type="text/css" href="style.css">
  	</head>
 
- 	<body onload="presearch(), update_status()">
+ 	<body onload="presearch()">
  		<!--menu-->
  		<div id='menu-div'>
  			<button class="menu-item unselectable">Profile</button><button class="menu-item unselectable" onClick="location.href='wishlist.php'">My Wishlist</button>

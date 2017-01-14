@@ -108,6 +108,10 @@ button:focus {
 	text-align:center;
 	display:inline-block;
 }
+.menu-item.active{
+	background-color:rgba(255,255,255,0.3);
+}
+
 .menu-item-left{
 	float:left;
 }
@@ -266,5 +270,20 @@ button:focus {
 }
 .add-to-wishlist:hover{
 	background-color:#47d147;
+	cursor:pointer;
+}
+.remove-from-wishlist{
+	width:40px;
+	height:40px;
+	line-height:40px;
+	bottom:0px;
+	right:0px;
+	background-color:#c43319;
+	position:absolute;
+	font-size:30px;
+	color:white;
+}
+.remove-from-wishlist:hover{
+	background-color:#f45642;
 	cursor:pointer;
 }
