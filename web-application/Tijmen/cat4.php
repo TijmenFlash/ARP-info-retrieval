@@ -22,10 +22,8 @@
  		<!--categories-->
  		<div class="unselectable" id="categories-div">
  			<h1>Choose a subcategory</h1>
- 			<div onClick="location.href='search.php?q=bal'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/balls.jpg'/></div><div class="categorie_part_b">Balls</div></div>
- 			<div onClick="location.href='search.php?q=skate'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/skating.jpg'/></div><div class="categorie_part_b">Skating</div></div>
- 			<div onClick="location.href='search.php?q=rides'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/placeholder.jpg'/></div><div class="categorie_part_b">Rides</div></div>
- 			<div onClick="location.href='search.php?q=water'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/water.jpg'/></div><div class="categorie_part_b">Water Sports</div></div>
+ 			<div onClick="location.href='search.php?q=dvd'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/placeholder.jpg'/></div><div class="categorie_part_b">DVD</div></div>
+ 			<div onClick="location.href='search.php?q=electronics'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/placeholder.jpg'/></div><div class="categorie_part_b">Gadgets</div></div>
  			</div>
  		<!--status footer-->
  		<div class="unselectable" id="status-div">

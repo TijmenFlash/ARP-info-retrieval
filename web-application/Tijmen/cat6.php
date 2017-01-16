@@ -22,11 +22,12 @@
  		<!--categories-->
  		<div class="unselectable" id="categories-div">
  			<h1>Choose a subcategory</h1>
- 			<div onClick="location.href='search.php?q=bal'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/balls.jpg'/></div><div class="categorie_part_b">Balls</div></div>
- 			<div onClick="location.href='search.php?q=skate'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/skating.jpg'/></div><div class="categorie_part_b">Skating</div></div>
- 			<div onClick="location.href='search.php?q=rides'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/placeholder.jpg'/></div><div class="categorie_part_b">Rides</div></div>
- 			<div onClick="location.href='search.php?q=water'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/water.jpg'/></div><div class="categorie_part_b">Water Sports</div></div>
- 			</div>
+ 			<div onClick="location.href='search.php?q=kleding'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/placeholder.jpg'/></div><div class="categorie_part_b">Clothes</div></div>
+ 			<div onClick="location.href='search.php?q=tassen'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/placeholder.jpg'/></div><div class="categorie_part_b">Bags & Wallets</div></div>
+ 			<div onClick="location.href='search.php?q=sierraad'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/placeholder.jpg'/></div><div class="categorie_part_b">Jewellery</div></div>
+ 			<div onClick="location.href='search.php?q=horloge'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/placeholder.jpg'/></div><div class="categorie_part_b">Watches</div></div>
+ 			<div onClick="location.href='search.php?q=sunglasses'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/placeholder.jpg'/></div><div class="categorie_part_b">Sunglasses</div></div>
+ 		</div>
  		<!--status footer-->
  		<div class="unselectable" id="status-div">
  			<div id="statusItem1" class="status-item"></div>
