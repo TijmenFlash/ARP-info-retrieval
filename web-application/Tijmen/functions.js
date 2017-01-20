@@ -75,7 +75,7 @@ function showAllResults(){
         dataType: 'text',
         success: function(data){
           JSONdata = JSON.parse(data);
-          console.log(JSONdata);
+          shuffle(JSONdata);
           $("#results-div").html("")
           for(i=0;i<JSONdata.length;i++){
             $("#results-div").append("<div class='product'><div class='product-image'><img class='product-image-src' style='width:100%;' src='"+JSONdata[i]._source.image+"'/></div><div class='product-title'>"+JSONdata[i]._source.title+"</div><div onclick='addWish1("+i+")' id='addWish"+i+"' class='add-to-wishlist'>+</div></div>");
@@ -191,3 +191,21 @@ function getQueryStrings() {
   return assoc; 
 } 
 
+function shuffle(array) {
+  var currentIndex = array.length, temporaryValue, randomIndex;
+
+  // While there remain elements to shuffle...
+  while (0 !== currentIndex) {
+
+    // Pick a remaining element...
+    randomIndex = Math.floor(Math.random() * currentIndex);
+    currentIndex -= 1;
+
+    // And swap it with the current element.
+    temporaryValue = array[currentIndex];
+    array[currentIndex] = array[randomIndex];
+    array[randomIndex] = temporaryValue;
+  }
+
+  return array;
+}
