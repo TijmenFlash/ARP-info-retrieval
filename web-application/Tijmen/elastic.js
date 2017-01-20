@@ -14,10 +14,10 @@ function searching(inp, fun1) {
     index: 'project1',
     type: 'products',
     body: {
-      size: 100,
+      size: 1000,
       query: {
         match: {
-          description: inp
+          subcategory: inp
         }
       }
     }

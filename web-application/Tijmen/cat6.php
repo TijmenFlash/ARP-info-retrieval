@@ -22,11 +22,11 @@
  		<!--categories-->
  		<div class="unselectable" id="categories-div">
  			<h1>Choose a subcategory</h1>
- 			<div onClick="location.href='search.php?q=kleding'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/cloths.jpg'/></div><div class="categorie_part_b">Clothes</div></div>
- 			<div onClick="location.href='search.php?q=tassen'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/bags.jpg'/></div><div class="categorie_part_b">Bags & Wallets</div></div>
- 			<div onClick="location.href='search.php?q=sierraad'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/jewellery.jpg'/></div><div class="categorie_part_b">Jewellery</div></div>
- 			<div onClick="location.href='search.php?q=horloge'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/watches.jpg'/></div><div class="categorie_part_b">Watches</div></div>
- 			<div onClick="location.href='search.php?q=zonnebril'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/sunglasses.jpg'/></div><div class="categorie_part_b">Sunglasses</div></div>
+ 			<div onClick="location.href='search.php?q=clothes'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/cloths.jpg'/></div><div class="categorie_part_b">Clothes</div></div>
+ 			<div onClick="location.href='search.php?q=bags wallets'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/bags.jpg'/></div><div class="categorie_part_b">Bags & Wallets</div></div>
+ 			<div onClick="location.href='search.php?q=jewellery'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/jewellery.jpg'/></div><div class="categorie_part_b">Jewellery</div></div>
+ 			<div onClick="location.href='search.php?q=watches'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/watches.jpg'/></div><div class="categorie_part_b">Watches</div></div>
+ 			<div onClick="location.href='search.php?q=sunglasses'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/sunglasses.jpg'/></div><div class="categorie_part_b">Sunglasses</div></div>
  		</div>
  		<!--status footer-->
  		<div class="unselectable" id="status-div">

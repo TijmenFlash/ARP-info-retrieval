@@ -22,8 +22,8 @@
  		<!--categories-->
  		<div class="unselectable" id="categories-div">
  			<h1>Choose a subcategory</h1>
- 			<div onClick="location.href='search.php?q=dvd'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/placeholder.jpg'/></div><div class="categorie_part_b">DVD</div></div>
- 			<div onClick="location.href='search.php?q=electronics'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/placeholder.jpg'/></div><div class="categorie_part_b">Gadgets</div></div>
+ 			<div onClick="location.href='search.php?q=films players'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/films.jpg'/></div><div class="categorie_part_b">Films & Players</div></div>
+ 			<div onClick="location.href='search.php?q=gadgets'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/gadgets.jpg'/></div><div class="categorie_part_b">Gadgets</div></div>
  			</div>
  		<!--status footer-->
  		<div class="unselectable" id="status-div">

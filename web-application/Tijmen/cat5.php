@@ -22,11 +22,11 @@
  		<!--categories-->
  		<div class="unselectable" id="categories-div">
  			<h1>Choose a subcategory</h1>
- 			<div onClick="location.href='search.php?q=query1'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/lego.jpg'/></div><div class="categorie_part_b">Lego</div></div>
- 			<div onClick="location.href='search.php?q=query2'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/boardgames.jpg'/></div><div class="categorie_part_b">Board Games</div></div>
- 			<div onClick="location.href='search.php?q=query1'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/puzzle.jpg'/></div><div class="categorie_part_b">Puzzles</div></div>
- 			<div onClick="location.href='search.php?q=query2'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/dolls.jpg'/></div><div class="categorie_part_b">Action figures & Dolls (stuffed animals & dolls?)</div></div>
- 			<div onClick="location.href='search.php?q=query1'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/placeholder.jpg'/></div><div class="categorie_part_b">Vehicles</div></div>
+ 			<div onClick="location.href='search.php?q=lego'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/lego.jpg'/></div><div class="categorie_part_b">Lego</div></div>
+ 			<div onClick="location.href='search.php?q=boardgames'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/boardgames.jpg'/></div><div class="categorie_part_b">Board Games</div></div>
+ 			<div onClick="location.href='search.php?q=puzzle'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/puzzle.jpg'/></div><div class="categorie_part_b">Puzzles</div></div>
+ 			<div onClick="location.href='search.php?q=action figures dolls'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/dolls.jpg'/></div><div class="categorie_part_b">Action figures & Dolls (stuffed animals & dolls?)</div></div>
+ 			<div onClick="location.href='search.php?q=vehicles'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/vehicles.jpg'/></div><div class="categorie_part_b">Vehicles</div></div>
  			</div>
  		<!--status footer-->
  		<div class="unselectable" id="status-div">

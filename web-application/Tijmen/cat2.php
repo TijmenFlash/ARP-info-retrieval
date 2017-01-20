@@ -23,7 +23,7 @@
  		<div class="unselectable" id="categories-div">
  			<h1>Choose a subcategory</h1>
  			<div onClick="location.href='search.php?q=xbox'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/xbox.jpg'/></div><div class="categorie_part_b">Xbox</div></div>
- 			<div onClick="location.href='search.php?q=playstation'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/ps.jpg'/></div><div class="categorie_part_b">Playstation</div></div>
+ 			<div onClick="location.href='search.php?q=ps'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/ps.jpg'/></div><div class="categorie_part_b">Playstation</div></div>
  			<div onClick="location.href='search.php?q=wii'" class='categories'><div class="categorie_part_a"><img style="width:100%;" src='src/wii.jpg'/></div><div class="categorie_part_b">Wii</div></div>
  		</div>
  		<!--status footer-->
