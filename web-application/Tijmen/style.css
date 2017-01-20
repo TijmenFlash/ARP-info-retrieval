@@ -15,8 +15,8 @@ body{
 	overflow:hidden;
 }
 h1{
-	font-family: oswald;
-	font-size: 20px;
+	font-family: oswald !important; 
+	font-size: 20px !important;
 }
 button:focus {
 	outline:0;
@@ -252,6 +252,8 @@ button:focus {
 	bottom:0px;
 	width:180px;
 	line-height:40px;
+	padding-left:8px;
+	padding-right:8px;
 	font-size:13px;
 	position:absolute;
 	color:white;
