@@ -1,4 +1,4 @@
-//cd ../../xampp\htdocs\elasticsearch_ARPInfoRetrieval
+//cd ../../xampp\htdocs\ARPproject
 var elasticsearch = require("elasticsearch"),
     http = require("http");
 
