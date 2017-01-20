@@ -246,12 +246,14 @@ button:focus {
 	overflow:hidden;
 }
 .product-title{
-	height:30px;
+	height:40px;
+	width:180px;
 	left:0px;
-	width:170px;
-	padding:5px;
-	line-height:30px;
+	bottom:0px;
+	width:180px;
+	line-height:40px;
 	font-size:13px;
+	position:absolute;
 	color:white;
 	text-align:center;
 	overflow:hidden;

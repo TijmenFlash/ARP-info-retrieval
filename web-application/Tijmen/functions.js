@@ -23,6 +23,25 @@ function presearch1(){
   refreshResults1();
 }
 
+function wheretoplace(){
+    var width = event.pageX;
+    if (width<800) return 'right';
+    return 'left';
+}
+
+function popoverfunction(){
+  for(i=0;i<JSONdata.length;i++){
+    $("#popProduct"+i).popover({ 
+      html: true,
+      trigger: "hover",
+      placement: wheretoplace,
+      title: "<div style='width:80%;'><b>"+JSONdata[i]._source.title+"</b></div> <div style='color:blue;top:8px;right:8px;position:absolute;'>€"+ JSONdata[i]._source.price+"</div>",
+      content: JSONdata[i]._source.description,
+      container: "body"
+    });
+  }
+}
+
 function refreshResults(){
     $.ajax({
         type: "POST",
@@ -34,8 +53,12 @@ function refreshResults(){
           
           $("#results-div").html("")
           for(i=0;i<JSONdata.length;i++){
-            $("#results-div").append("<div class='product'><div class='product-image'><img class='product-image-src' style='width:100%;' src='"+JSONdata[i]._source.image+"'/></div><div class='product-title'>"+JSONdata[i]._source.title+"</div><div onclick='addWish("+i+")' id='addWish"+i+"' class='add-to-wishlist'>+</div></div>");
+            $("#results-div").append("<div class='product' id='popProduct"+i+"'><div class='product-image'><img class='product-image-src' style='width:100%;' src='"+JSONdata[i]._source.image+"'/></div><div class='product-title'>"+JSONdata[i]._source.title+"</div><div onclick='addWish("+i+")' id='addWish"+i+"' class='add-to-wishlist'>+</div></div>");
           }
+
+          //added
+          popoverfunction();
+          
           if(JSONdata.length==0){
             $("#results-div").append("<br><br><h1>No results.</h1>");
           }
@@ -56,8 +79,12 @@ function refreshResults1(){
           
           $("#results-div").html("")
           for(i=0;i<JSONdata.length;i++){
-            $("#results-div").append("<div class='product'><div class='product-image'><img class='product-image-src' style='width:100%;' src='"+JSONdata[i]._source.image+"'/></div><div class='product-title'>"+JSONdata[i]._source.title+"</div><div onclick='addWish1("+i+")' id='addWish"+i+"' class='add-to-wishlist'>+</div></div>");
+            $("#results-div").append("<div class='product' id='popProduct"+i+"'><div class='product-image'><img class='product-image-src' style='width:100%;' src='"+JSONdata[i]._source.image+"'/></div><div class='product-title'>"+JSONdata[i]._source.title+"</div><div onclick='addWish1("+i+")' id='addWish"+i+"' class='add-to-wishlist'>+</div></div>");
           }
+
+          //added
+          popoverfunction();
+
           if(JSONdata.length==0){
             $("#results-div").append("<br><br><h1>No results.</h1>");
           }
@@ -78,8 +105,12 @@ function showAllResults(){
           shuffle(JSONdata);
           $("#results-div").html("")
           for(i=0;i<JSONdata.length;i++){
-            $("#results-div").append("<div class='product'><div class='product-image'><img class='product-image-src' style='width:100%;' src='"+JSONdata[i]._source.image+"'/></div><div class='product-title'>"+JSONdata[i]._source.title+"</div><div onclick='addWish1("+i+")' id='addWish"+i+"' class='add-to-wishlist'>+</div></div>");
+            $("#results-div").append("<div class='product' id='popProduct"+i+"'><div class='product-image'><img class='product-image-src' style='width:100%;' src='"+JSONdata[i]._source.image+"'/></div><div class='product-title'>"+JSONdata[i]._source.title+"</div><div onclick='addWish1("+i+")' id='addWish"+i+"' class='add-to-wishlist'>+</div></div>");
           }
+
+          //added
+          popoverfunction();
+
           if(JSONdata.length==0){
             $("#results-div").append("<br><br><h1>No results.</h1>");
           }
@@ -98,6 +129,11 @@ function refreshWishlistResults(){
           $("#results-div").append("<div class='product'><div class='product-image'><img class='product-image-src' style='width:100%;' src='"+JSONdata[i].item_link+"'/></div><div class='product-title'>"+JSONdata[i].item_title+"</div><div onclick='removeWish("+i+")' id='removeWish"+i+"' class='remove-from-wishlist'>x</div></div>");
         }
       }
+
+      //added
+      popoverfunction();
+
+
       if(data.length==0){
         $("#results-div").append("<br><br><h1>No results.</h1>");
       }
@@ -113,7 +149,12 @@ function refreshWishlistResults1(){
       for(i=0;i<JSONdata.length;i++){
         if(JSONdata[i].item_list==1){
           $("#results-div").append("<div class='product'><div class='product-image'><img class='product-image-src' style='width:100%;' src='"+JSONdata[i].item_link+"'/></div><div class='product-title'>"+JSONdata[i].item_title+"</div><div onclick='removeWish("+i+")' id='removeWish"+i+"' class='remove-from-wishlist'>x</div></div>");
-        }      }
+        }      
+      }
+
+      //added
+      popoverfunction();
+
       if(data.length==0){
         $("#results-div").append("<br><br><h1>No results.</h1>");
       }
