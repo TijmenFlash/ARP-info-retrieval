@@ -218,6 +218,7 @@ button:focus {
 }
 #products-container{
 	height:100%;
+	width:100%;
 	text-align: center;
 	position:absolute;
 	display:inline;
